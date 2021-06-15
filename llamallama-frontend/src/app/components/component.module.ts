@@ -1,34 +1,31 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
-import { MaterialModule } from '../material/material.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HeaderclienteComponent } from './headercliente/headercliente.component';
-import { NavegaciontiendaComponent } from './navegaciontienda/navegaciontienda.component';
-import { CompracComponent } from './comprac/comprac.component';
-import { CompraorderComponent } from './compraorder/compraorder.component';
 
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ProductosComponent } from './productos/productos.component';
+
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MaterialModule } from '../material/material.module';
+import { CrudProductosComponent } from './crud-productos/crud-productos.component';
 
 
 @NgModule({
   declarations: [
-    HeaderComponent,
-    HeaderclienteComponent,
-    NavegaciontiendaComponent,
-    CompracComponent,
-    CompraorderComponent
+    LoginComponent,
+    CrudProductosComponent,
+    RegisterComponent,
+    ProductosComponent,
   ],
-  imports: [
+  imports:[
     CommonModule,
+    FormsModule,
     MaterialModule,
-    ReactiveFormsModule,
-    FormsModule
+    ReactiveFormsModule
   ],
   exports: [
-    HeaderComponent,
-    MaterialModule,
-    ReactiveFormsModule,
-    FormsModule,
-  ]
+    LoginComponent,
+    MaterialModule
+  ] 
 })
 export class ComponentModule { }

@@ -1,15 +1,12 @@
 <div class="body">
     <div class="login">
-        <h1 class="h3 mb-3 fw-normal">Login</h1>
-        <mat-form-field class="ancho" appearance="fill" > 
-            <mat-label> Usuario </mat-label>
+        <h1>Login</h1>
+        <mat-form-field> 
             <input matInput placeholder="Usuario" [(ngModel)] = "user">
         </mat-form-field>
-        <mat-form-field class="ancho" appearance="fill">
-            <mat-label> Contraseña </mat-label>
+        <mat-form-field>
             <input matInput placeholder="Contraseña" type="password" [(ngModel)] = "password">
         </mat-form-field>
-        <br>
         <button (click)='ingresar()'
             class="ancho"
             mat-raised-button mat-button color="primary">
@@ -26,6 +23,6 @@
                 </h6>
             </nav>
         </div>
-        
     </div>
 </div>
+

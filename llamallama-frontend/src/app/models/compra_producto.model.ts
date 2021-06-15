@@ -4,4 +4,5 @@ export class Compra_producto{
     compraid: number;
     productoid: number;
     tiendaid: number;
+
 }

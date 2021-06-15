@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -7,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  user: string | undefined;
-  email: string | undefined;
-  password: string | undefined;
-  confirmpassword: string | undefined;
+  user: string;
+  email: string;
+  password: string;
+  confirmpassword: string;
+  userType: string;
+
+
+  usertypes: string[] = ['vendedor', 'comprador'];
+
+  rbuttonChange(){
+    console.log(this.userType)
+  }
 
   constructor() { }
 

@@ -9,9 +9,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
-import {MatStepperModule} from '@angular/material/stepper';
+import { MatStepperModule} from '@angular/material/stepper';
 import { MatCardModule } from '@angular/material/card';
 import { AppRoutingModule } from '../app-routing.module';
+import { MatRadioModule} from '@angular/material/radio';
+import { MatGridListModule} from '@angular/material/grid-list'
 
 @NgModule({
   declarations: [],
@@ -29,6 +31,8 @@ import { AppRoutingModule } from '../app-routing.module';
     MatDialogModule,
     MatStepperModule,
     AppRoutingModule,
+    MatRadioModule,
+    MatGridListModule
     
   ],
   exports: [
@@ -44,6 +48,8 @@ import { AppRoutingModule } from '../app-routing.module';
     MatDialogModule,
     MatStepperModule,
     AppRoutingModule,
+    MatRadioModule,
+    MatGridListModule
   ]
 })
 export class MaterialModule { }
