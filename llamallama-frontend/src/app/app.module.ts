@@ -19,21 +19,23 @@ import { NavegaciontiendaComponent } from './components/navegaciontienda/navegac
 import { HttpClientModule } from '@angular/common/http';
 import { CompracComponent } from './components/comprac/comprac.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatInput, MatInputModule } from '@angular/material/input';
 import { CompraorderComponent } from './components/compraorder/compraorder.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { MatRadioButton, MatRadioModule } from '@angular/material/radio';
-import { MatOptionModule } from '@angular/material/core';
+import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
 import { CrudProductosComponent } from './components/crud-productos/crud-productos.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { ComponentModule } from './components/component.module';
+import { MatSelectModule } from '@angular/material/select';
+import { MatStepperModule } from '@angular/material/stepper';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     RegisterComponent,
     HeaderclienteComponent,
     HeaderComponent,
@@ -60,7 +62,15 @@ import { ComponentModule } from './components/component.module';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MatGridListModule,
-    ComponentModule
+    CommonModule,
+    MatInputModule,
+    MatSelectModule,
+    MatDialogModule,
+    MatStepperModule,
+    MatNativeDateModule,
+    AppRoutingModule,
+    MatRadioModule,
+    MatGridListModule
     
   
 

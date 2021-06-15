@@ -12,10 +12,8 @@ import { CrudProductosComponent } from './crud-productos/crud-productos.componen
 
 @NgModule({
   declarations: [
-    LoginComponent,
-    CrudProductosComponent,
-    RegisterComponent,
-    ProductosComponent,
+    LoginComponent
+
   ],
   imports:[
     CommonModule,
